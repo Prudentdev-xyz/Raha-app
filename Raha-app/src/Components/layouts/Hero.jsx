@@ -1,6 +1,8 @@
 import React from "react";
-import { PrimaryButton } from "./buttons/PrimaryButton";
-import { SecondaryButton } from "./buttons/SecondaryButton";
+import { PrimaryButton } from "../buttons/PrimaryButton";
+import { SecondaryButton } from "../buttons/SecondaryButton";
+import { WatchnowButton } from "../buttons/WatchnowButton";
+import { DonatenewButton } from "../buttons/DonatenewButton";
 
 export const Hero = () => {
   return (
@@ -17,13 +19,13 @@ export const Hero = () => {
             compassionate world.
           </p>
           <div className="flex justify-center gap-3">
-            <SecondaryButton />
-            <SecondaryButton />
+            <WatchnowButton>Watch Video</WatchnowButton>
+            <DonatenewButton>Donate Now</DonatenewButton>
           </div>
         </div>
       </div>
       <img className="absolute right-20 -bottom-24" src="/hero-plastic.svg" />
-      <img className="absolute right-0 -top-10" src="/hero-hand.png" />
+      <img className="absolute right-0 -top-9" src="/hero-hand.png" />
     </div>
   );
 };
