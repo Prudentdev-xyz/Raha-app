@@ -24,7 +24,7 @@ import React from "react";
 
 export const ServiceCards = ({ text, header, img }) => {
   return (
-    <div className="items-center border border-tetiary shadow-xl border-primary relative p-30 relative">
+    <div className="items-center border-2 border-stroke relative p-30">
       <h1 className="text-2xl font-bold">{header}</h1>
       <p className="text-gray max-w-lg space-y-5 space-x-5 text-sm">{text}</p>
       <img src={img} alt="serive img" className="absolute right-0 bottom-1" />

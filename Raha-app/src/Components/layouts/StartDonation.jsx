@@ -1,12 +1,33 @@
-import React from 'react'
+import React from "react";
+import { CampaignCard, Campaigndata } from "../CampaignCard";
 
 export const StartDonation = () => {
   return (
-    <div className='relative items-center p-30'>
-        <div>
-            <p className='text-center font-bold text-primary tracking-widest text-xl'>START DONATIONS</p>
-            <h2>Transparent Donations: See How You Make a Difference</h2>
-        </div>
+    <div className="relative items-center p-25 bg-neutral">
+      <div>
+        <p className="font-bold text-center text-primary tracking-widest text-xl">
+          START DONATIONS
+        </p>
+        <p className="font-semibold mx-auto text-center text-3xl p-2 max-w-xl">
+          Transparent Donations: See How You Make a Difference
+        </p>
+      </div>
+      <div className="flex gap-7.5 pt-10 items-center justify-center">
+        {Campaigndata.map((Campaigndata) => (
+        <CampaignCard
+        img={Campaigndata.img}
+        header={Campaigndata.header}
+        text={Campaigndata.text}
+        number={Campaigndata.number}
+        donate={Campaigndata.donate}
+        raisedNo={Campaigndata.raisedNo}
+        />
+        ))}
+      </div>
+      <div>
+        <img className="absolute left-0 top-0" src="/Donation-leaf-left.svg" />
+        <img className="absolute right-0 top-0" src="/Donation-leaf-right.svg"/>
+      </div>
     </div>
-  )
-}
+  );
+};
