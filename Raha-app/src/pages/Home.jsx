@@ -1,6 +1,8 @@
 import { CharityService } from "../components/layouts/CharityService";
+import { DonationNO } from "../components/DonationNO";
 import { Hero } from "../components/layouts/Hero";
 import { StartDonation } from "../components/layouts/StartDonation";
+import { TrustedCompany } from "../components/layouts/TrustedCompany";
 
 export const Home = () => {
   return (
@@ -8,6 +10,8 @@ export const Home = () => {
       <Hero />
       <CharityService />
       <StartDonation />
+      <DonationNO />
+      <TrustedCompany />
     </div>
   );
 };

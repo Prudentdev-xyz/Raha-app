@@ -42,8 +42,8 @@ export const CampaignCard = ({
 }) => {
 
   return (
-    <div className="border-white border-4 p-10 shadow flex flex-col gap-4">
-      <img src={img} alt="campaign img" className="h-100 w-105 flex items-center justify-center mx-auto"/>
+    <div className="border-white border-4 p-10 hover:shadow-lg hover:border-0 flex flex-col gap-4">
+      <img src={img} alt="campaign img" className="h-100 w-150 flex items-center justify-center mx-auto"/>
       <h1 className="font-medium text-2xl max-w-sm">{header}</h1>
       <p className="text-gray font-regular text-sm max-w-sm">{text}</p>
       <div>
@@ -52,7 +52,7 @@ export const CampaignCard = ({
       </p>
       <div className="flex relative">
         <p className="h-[14px] w-[490px] bg-secondary/50 rounded-full relative"></p>
-        <p className="h-[14px] w-[295.42px] bg-[#FFE353] rounded-full left absolute"></p>
+        <p className="h-[14px] w-[295.42px] bg-secondary rounded-full left absolute"></p>
       </div>
       </div>
       <div className="pt-3">
