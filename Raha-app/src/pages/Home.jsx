@@ -3,6 +3,7 @@ import { DonationNO } from "../components/DonationNO";
 import { Hero } from "../components/layouts/Hero";
 import { StartDonation } from "../components/layouts/StartDonation";
 import { TrustedCompany } from "../components/layouts/TrustedCompany";
+import { Testimonial } from "../components/Testimonial";
 
 export const Home = () => {
   return (
@@ -12,6 +13,7 @@ export const Home = () => {
       <StartDonation />
       <DonationNO />
       <TrustedCompany />
+      <Testimonial />
     </div>
   );
 };

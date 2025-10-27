@@ -20,10 +20,6 @@ export const links = [
   },
   {
     link: "",
-    text: "Blog",
-  },
-  {
-    link: "",
     text: "Contact",
   },
 ];

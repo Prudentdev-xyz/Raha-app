@@ -11,7 +11,7 @@ export const CharityService = () => {
           <p className="text-xl font-bold text-primary tracking-widest">
             CHARITY SERVICE
           </p>
-          <h2 className="text-3xl font-bold space-x-11 max-w-xl">
+          <h2 className="text-3xl font-semibold space-x-11 max-w-xl">
             Dedicated to Everyone – Compassionate Service for All People
             Everywhere
           </h2>
