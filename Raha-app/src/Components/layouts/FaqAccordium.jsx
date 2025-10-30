@@ -44,29 +44,29 @@ function FaqAccordium() {
 
   return (
     <div>
-      <div className="">
+      <div className="w-full flex flex-col gap-5">
         {Faqs.map((Faqs, index) => (
           <div
-            className={`transition-all duration-200 ease-in-out ${
-              selectItem === index ? "bg-primary" : "bg-white"
+            className={`transition-all duration-200 ease-in-out w-3/4 ${
+              selectItem === index ? "bg-primary w-3/4" : "bg-white"
             }`}
           >
-            <button className="" onClick={() => toogleItem(index)}>
-              <div className="flex gap-2 items-center">
-                <span className="font-medium text-3xl">{Faqs.Question}</span>
-                <span>
-                  {selectItem === index ? <CircleMinus /> : <CirclePlus />}
-                </span>
+            <button className={`w-full ${selectItem === index ? "" : "border border-stroke"}"`} onClick={() => toogleItem(index)}>
+              <div className="flex gap-2 items-center justify-between px-3 py-2">
+                <h1 className={`font-medium text-2xl max-w-xl text-left p-3 ${selectItem === index ? "text-white" : ""}`}>{Faqs.Question}</h1>
+                <div className="justify-between">
+                  {selectItem === index ? <CircleMinus /> : <CirclePlus  />}
+                </div>
               </div>
             </button>
             <div
               className={`transition-all duration-200 ease-in-out ${
                 selectItem === index
-                  ? "h-10 opacity-100% bg-primary"
-                  : "min-h-0 opacity-0"
+                  ? "h-25 opacity-100% bg-primary"
+                  : "max-h-0 opacity-0 border-0"
               }`}
             >
-              <p className="font-regular text-lg text-gray">{Faqs.Answer}</p>
+              <p className="font-regular text-lg max-w-xl mx-auto text-gray py-2">{Faqs.Answer}</p>
             </div>
           </div>
         ))}

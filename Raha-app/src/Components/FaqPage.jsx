@@ -1,17 +1,20 @@
 import React from 'react'
 import FaqAccoedium from './layouts/FaqAccordium'
 import FaqAccordium from './layouts/FaqAccordium'
+import BoyRight from "/BoyRight.svg"
 
 export const FaqPage = () => {
   return (
-    <div className='py-10 px-10'>
+    <div className='py-15 px-10'>
         <div>
             <h1 className='font-semibold text-2xl tracking-widest text-primary'>FREQUENTLY ASKED QUESTION (FAQ)</h1>
             <p className='font-semibold text-3xl pt-3'>Have any question For Us?</p>
         </div>
-        <div className='pt-10'>
+        <div className='pt-10 flex gap-30'>
+        <div className='h-200 w-200'>
          <FaqAccordium />
-         <img src="" alt="" />
+         </div>
+         <img src={BoyRight} className='h-180 w-180'/>
         </div>
     </div>
   )
