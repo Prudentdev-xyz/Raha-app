@@ -31,7 +31,8 @@ const Faqs = [
   },
   {
     Question: "How can I stay updated on your charity’s activities?",
-    Answer: "How can I stay updated on your charity’s activities?",
+    Answer:
+      "You can stay updated by following our social media pages, subscribing to our newsletter, or checking our website regularly for news, campaign updates, and impact stories.",
   },
 ];
 
@@ -44,18 +45,29 @@ function FaqAccordium() {
 
   return (
     <div>
-      <div className="w-full flex flex-col gap-5">
+      <div className="w-270 flex flex-col gap-5">
         {Faqs.map((Faqs, index) => (
           <div
             className={`transition-all duration-200 ease-in-out w-3/4 ${
               selectItem === index ? "bg-primary w-3/4" : "bg-white"
             }`}
           >
-            <button className={`w-full ${selectItem === index ? "" : "border border-stroke"}"`} onClick={() => toogleItem(index)}>
+            <button
+              className={`w-full ${
+                selectItem === index ? "" : "border border-stroke"
+              }`}
+              onClick={() => toogleItem(index)}
+            >
               <div className="flex gap-2 items-center justify-between px-3 py-2">
-                <h1 className={`font-medium text-2xl max-w-xl text-left p-3 ${selectItem === index ? "text-white" : ""}`}>{Faqs.Question}</h1>
+                <h1
+                  className={`font-medium text-2xl max-w-xl text-left p-3 ${
+                    selectItem === index ? "text-white" : ""
+                  }`}
+                >
+                  {Faqs.Question}
+                </h1>
                 <div className="justify-between">
-                  {selectItem === index ? <CircleMinus /> : <CirclePlus  />}
+                  {selectItem === index ? <CircleMinus /> : <CirclePlus />}
                 </div>
               </div>
             </button>
@@ -66,7 +78,9 @@ function FaqAccordium() {
                   : "max-h-0 opacity-0 border-0"
               }`}
             >
-              <p className="font-regular text-lg max-w-xl mx-auto text-gray py-2">{Faqs.Answer}</p>
+              <p className="font-regular text-lg max-w-3xl text-gray text-left py-1 px-3">
+                {Faqs.Answer}
+              </p>
             </div>
           </div>
         ))}
