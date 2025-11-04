@@ -4,33 +4,33 @@ import { WatchnowButton } from "./buttons/WatchnowButton";
 export const DonationNO = () => {
   return (
     <div className='relative bg-cover bg-[url("/Donation-No-bg.svg")]'>
-      <div className="py-20">
+      <div className="py-10 md:py-20">
         <div className="text-tetiary">
-          <p className="flex items-center justify-center font-medium text-4xl max-w-3xl mx-auto">
+          <p className="flex text-center items-center justify-center font-medium text-xl md:text-4xl max-w-3xl mx-auto">
             Join Our Community of Donors and Volunteers:
           </p>
-          <p className="flex items-center justify-center font-medium text-4xl max-w-3xl mx-auto py-3">
+          <p className="flex text-center items-center justify-center font-medium text-xl md:text-4xl max-w-10xl md:max-w-3xl mx-auto py-3">
             Be Part of Positive Change in the World
           </p>
-          <h1 className="font-bold text-tetiary text-8xl flex items-center justify-center py-5">
+          <h1 className="font-bold text-tetiary text-6xl md:text-8xl flex text-center items-center justify-center py-3 md:py-5">
             154,859+
           </h1>
-          <p className="font-medium text-gray flex items-center justify-center pt-5 pb-2 text-3xl max-w-lg mx-auto">
+          <p className="font-medium text-gray flex text-center items-center justify-center pt-2 md:pt-5 pb-2 text-xl md:text-3xl max-w-lg mx-auto">
             Join the Many Who Already Support
           </p>
-          <p className="font-medium text-gray flex items-center justify-center text-3xl max-w-lg mx-auto">
+          <p className="font-medium text-gray flex text-center items-center justify-center text-xl md:text-3xl max-w-lg mx-auto">
             Our Mission
           </p>
         </div>
-        <div className="flex items-center justify-center pt-10">
+        <div className="flex items-center justify-center pt-5 md:pt-10">
           <WatchnowButton>Join Our Community</WatchnowButton>
         </div>
         <div>
           <img
-            className="absolute bottom-0 left-50"
+            className="absolute md:flex hidden bottom-0 left-50"
             src="/envelopeDonation.svg"
           />
-          <img className="absolute -top-5 left-20" src="/loveDonation.svg" />
+          <img className="absolute md:flex hidden -top-5 left-20" src="/loveDonation.svg" />
         </div>
       </div>
     </div>
