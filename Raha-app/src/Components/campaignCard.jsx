@@ -42,10 +42,10 @@ export const CampaignCard = ({
 }) => {
 
   return (
-    <div className="border-white border-4 py-5 px-10 md:p-6 hover:shadow-lg hover:border-0 flex flex-col gap-4">
+    <div className="border-white border-4 py-5 px-15 md:px-10 md:p-6 hover:shadow-lg hover:border-0 flex flex-col gap-4">
       <img src={img} alt="campaign img" className="h-50 w-80 md:h-100 md:w-150 flex items-center justify-center mx-auto"/>
       <h1 className="font-bold md:font-medium text-sm md:text-2xl items-center max-w-3xl md:max-w-sm">{header}</h1>
-      <p className="text-gray font-regular text-sm max-w-sm">{text}</p>
+      <p className="text-gray font-regular text-xs md:text-sm max-w-sm">{text}</p>
       <div>
       <p className="flex  flex-row gap-1">
         <span className="text-sm pb-1 md:text-xl font-bold">{number}</span>{" "} <p className="font-light text-sm md:text-lg text-gray">{raisedNo}</p>

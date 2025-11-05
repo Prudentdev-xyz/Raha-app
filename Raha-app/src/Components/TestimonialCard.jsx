@@ -26,13 +26,13 @@ import React from "react";
 export const TestimonialCard = ({ QuoteImg, texts, img, Name, Work }) => {
   return (
     <div className="border-gray2 border-2 hover:shadow- hover:border-0 gap-4">
-      <img src={QuoteImg} alt="QuoteImg" className="p-10" />
-      <p className="p-5 font-regular text-sm text-gray max-w-5xl">{texts}</p>
-      <div className="flex p-5 gap-5">
-      <img src={img} alt="Img" />
+      <img src={QuoteImg} alt="QuoteImg" className=" p-3 md:p-10" />
+      <p className=" p-3 md:p-5 font-regular text-xs md:text-sm text-gray max-w-5xl">{texts}</p>
+      <div className="flex p-2 md:p-5 gap-5">
+      <img src={img} alt="Img" className="h-30 w-30 md:h-[180px] md:w-[180px]" />
       <div className="flex flex-col justify-end">
-      <h3 className="font-medium text-black text-3xl">{Name}</h3>
-      <p className="font-regular text-gray textsm amx-w-sm-">{Work}</p>
+      <h3 className="font-normal md:font-medium text-black text-lg md:text-3xl">{Name}</h3>
+      <p className="font-regular text-gray text-xs md:text-lg max-w-sm-">{Work}</p>
       </div>
       </div>
     </div>

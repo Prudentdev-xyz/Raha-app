@@ -6,7 +6,7 @@ import CharityLeaf from "/Charity-leaf.svg";
 export const CharityService = () => {
   return (
     <div className="relative items-center">
-      <div className="px-3 py-5 md:px-20 md:py-30 flex flex-col md:flex-row items-center text-center md:justify-between gap-10">
+      <div className="px-3 py-5 md:px-20 md:py-30 flex flex-col md:flex-row items-center text-center justify-between gap-10">
         <div>
           <p className="text-sm md:text-xl font-bold text-primary tracking-widest">
             CHARITY SERVICE
@@ -34,7 +34,7 @@ export const CharityService = () => {
         ))}
       </div>
       <div>
-        <img src={CharityLeaf} className="absolute right-0 top-2" />
+        <img src={CharityLeaf} className="absolute -right-15 md:right-0 top-2" />
       </div>
     </div>
   );

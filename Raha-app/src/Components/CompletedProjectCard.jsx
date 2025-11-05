@@ -30,10 +30,10 @@ import React from "react";
 
 export const CompletedProjectCard = ({img, header, text, SeeProject}) => {
   return (
-    <div className="bg-tetiary px-10 pt-5 pb-10">
-      <img src={img} alt="CompletedProject" className="h-100 w-150 flex items-center justify-center" />
-      <h1 className="font-medium text-3xl max-w-2xl text-black">{header}</h1>
-      <p className="font-regular text-sm max-w-sm text-gray py-5">{text}</p>
+    <div className="bg-tetiary px-25 pt-3 md:pt-5 pb-5 md:pb-10">
+      <img src={img} alt="CompletedProject" className="h-50 w-80 md:h-100 md:w-150 flex items-center justify-center mx-auto" />
+      <h1 className="font-medium text-lg md:text-3xl max-w-2xl text-black text-center items-center">{header}</h1>
+      <p className="font-regular text-xs md:text-sm max-w-xl md:max-w-sm text-gray py-5">{text}</p>
       <PrimaryButton>{SeeProject}</PrimaryButton>
     </div>
   ); 

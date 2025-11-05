@@ -12,7 +12,7 @@ export const Hero = () => {
           <h1 className="text-2xl md:text-8xl font-bold text-white text-center">
             Every Helping Hand, Every Heartfelt Change
           </h1>
-          <p className="text:lg md:text-xl text-white text-center">
+          <p className="text:sm md:text-xl text-white text-center">
             Every helping hand brings heartfelt change, creating ripples of hope
             and compassion. Each act of kindness lifts lives, inspiring others
             and uniting us in a shared journey toward a brighter, more
