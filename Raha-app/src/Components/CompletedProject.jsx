@@ -18,7 +18,7 @@ export const CompletedProject = () => {
         </p>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-10 pt-5 items-center justify-center mx-20">
+      <div className="flex flex-col md:flex-row gap-10 pt-5 items-center justify-center mx-2 md:mx-20">
         {CompletedProjectdata.map((CompletedProjectdata) => (
         <CompletedProjectCard
         img={CompletedProjectdata.img}
