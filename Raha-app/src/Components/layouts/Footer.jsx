@@ -62,7 +62,7 @@ export const Footer = () => {
         </div>
 
       <div className="w-full md:w-xl h-xl pt-5 md:pt-3 text-sm md:text-lg md:text-right flex md:block items-center justify-center">
-        <ul className="text-tetiary gap-2 md:gap-3 grid grid-cols-2 md:grid-rows-3 md:grid-flow-col">
+        <ul className="text-tetiary gap-2 md:gap-3 grid grid-cols-2 md:grid-cols-3 ">
           {FooterLinks.map((link) => (
            <li>{link.text}</li>
           ))}

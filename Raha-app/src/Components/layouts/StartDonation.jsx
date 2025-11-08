@@ -21,6 +21,9 @@ export const StartDonation = () => {
         number={Campaigndata.number}
         donate={Campaigndata.donate}
         raisedNo={Campaigndata.raisedNo}
+        className={Campaigndata.className}
+        rangeClassName={Campaigndata.rangeClassName}
+        buttonclassName={Campaigndata?.buttonClassName}
         />
         ))}
       </div>

@@ -1,3 +1,4 @@
+import { Menu } from "lucide-react";
 import { PrimaryButton } from "../buttons/PrimaryButton";
 import logo from "/logo.svg";
 
@@ -26,12 +27,12 @@ export const links = [
 
 export const Header = () => {
   return (
-    <div className="flex justify-between items-center max-w-screen-2  mx-9 py-4">
+    <div className="flex justify-between items-center max-w-screen-2 mx-3 md:mx-9 py-4">
       <div className="h-12">
         <img src={logo} alt="logo" />
       </div>
       <div>
-        <ul className="flex gap-10">
+        <ul className="md:flex hidden gap-10">
           {links.map((link) => (
             <li className="text-gray-600 cursor-pointer hover:text-primary transition-colors">
               {link.text}
@@ -39,8 +40,11 @@ export const Header = () => {
           ))}
         </ul>
       </div>
-      <div>
+      <div className="md:flex hidden md:flex-row">
         <PrimaryButton>Donate Now</PrimaryButton>
+      </div>
+      <div className="flex md:hidden">
+        <Menu />
       </div>
     </div>
   );

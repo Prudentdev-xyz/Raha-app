@@ -25,6 +25,7 @@ export const CompletedProject = () => {
         header={CompletedProjectdata.header}
         text={CompletedProjectdata.text}
         SeeProject={CompletedProjectdata.SeeProject}
+        className={CompletedProjectdata.className}
         />
         ))}
       </div>

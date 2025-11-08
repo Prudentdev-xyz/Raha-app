@@ -11,6 +11,7 @@ export const Campaigndata = [
     number: "$25,294",
     raisedNo: "raised of $100,000 goal",
     donate: "Donate Now",
+    buttonClassName:"bg-secondary !text-black"
   },
   {
     img: img2,
@@ -19,6 +20,8 @@ export const Campaigndata = [
     number: "$75,294",
     raisedNo: "raised of $100,000 goal",
     donate: "Donate Now",
+    className: "!bg-primary/50",
+    rangeClassName: "!bg-primary",
   },
   {
     img: img3,
@@ -27,6 +30,7 @@ export const Campaigndata = [
     number: "$45,254",
     raisedNo: "raised of $100,000 goal",
     donate: "Donate Now",
+    buttonClassName: "bg-secondary !text-black"
   },
 ];
 
@@ -39,6 +43,9 @@ export const CampaignCard = ({
   number,
   raisedNo,
   donate,
+ className,
+ rangeClassName,
+ buttonclassName,
 }) => {
 
   return (
@@ -48,15 +55,17 @@ export const CampaignCard = ({
       <p className="text-gray font-regular text-xs md:text-sm max-w-sm">{text}</p>
       <div>
       <p className="flex  flex-row gap-1">
-        <span className="text-sm pb-1 md:text-xl font-bold">{number}</span>{" "} <p className="font-light text-sm md:text-lg text-gray">{raisedNo}</p>
+        <span className="text-sm pb-1 md:text-xl font-bold">{number}</span>{" "} <p className={`font-light text-sm md:text-lg text-gray`}>{raisedNo}</p>
       </p>
       <div className="flex relative">
-        <p className="h-[8px] w-[230px] md:h-[14px] md:w-[490px] bg-secondary/50 rounded-full relative"></p>
-        <p className="h-[8px] w-[100px] md:h-[14px] md:w-[295.42px] bg-secondary rounded-full left absolute"></p>
+        <p className={` ${className} h-2 w-[230px] md:h-3.5 md:w-[490px]  bg-secondary/50  rounded-full relative`}></p>
+        <p className={` ${rangeClassName} h-2 w-[100px] md:h-3.5 md:w-[295.42px] bg-secondary rounded-full left absolute`}></p>
       </div>
       </div>
-      <div className="pt-1 md:pt-3">
-      <DonatenewButton>{donate}</DonatenewButton>
+      <div className={`pt-1 md:pt-3 `}>
+          <button className={`bg-primary w-fit text-white px-6 md:px-8 py-2 md:py-4 text-lg md:text-xl font-medium rounded-full border-tetiary border-2 ${buttonclassName}`}>
+      {donate}
+    </button>
       </div>
     </div>
   );

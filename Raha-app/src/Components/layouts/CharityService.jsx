@@ -30,6 +30,7 @@ export const CharityService = () => {
             text={Servicedata.text}
             header={Servicedata.header}
             img={Servicedata.img}
+            className={Servicedata.className}
           />
         ))}
       </div>

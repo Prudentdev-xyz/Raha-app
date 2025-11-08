@@ -43,7 +43,7 @@ export const NewsLetter = () => {
         <img
           src="/flowerNewsletter.svg"
           alt="flowerNewsletter"
-          className="absolute md:flex hidden top-0 -right-10"
+          className="absolute md:flex hidden top-0 right-0"
         />
         <img
           src="/EnvelopeNewsletter.svg"
