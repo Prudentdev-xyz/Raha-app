@@ -47,15 +47,15 @@ export const Footer = () => {
   return (
     <div className="relative bg-primary">
       <div className="bg-primary px-13 pt-10 md:p-13 flex flex-col md:flex-row md:justify-between">
-        <div>
-        <img src={RahaLogo} className="pt-2" />
+        <div className="">
+        <img src={RahaLogo} className="flex flex-col md:flex-row items-center" />
         <p className="text-gray max-w-2xl  font-regular text-sm md:text-lg flex text-center md:text-left py-5">
           Great futures are built with the support of small charities that
           create meaningful change in their communities. By addressing local
           needs with compassion, these organizations lay the foundation for
           brighter tomorrows and empower individuals and families to thrive.
         </p>
-        <div className="pt-2 flex gap-5 flex-col md:flex-row items-center justify-center ">
+        <div className="pt-2 flex gap-5 flex-col md:flex-row items-center">
             <WatchnowButton>Donate Now</WatchnowButton>
             <DonatenewButton>Contact us</DonatenewButton>
         </div>
