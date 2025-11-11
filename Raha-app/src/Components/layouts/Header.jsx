@@ -61,7 +61,7 @@ export const Header = () => {
           <ul className="py-4 flex flex-col items-center justify-center static">
             {links.map((link) => (
               <li
-                className="text-gray-600 transition-colors py-3 px-3 hover:text-primary static"
+                className="text-gray-600 transition-colors py-3 px-3 hover:text-primary static cursor-pointer"
                 onClick={() => setOpen(false)}
               >
                 {link.text}
