@@ -5,11 +5,11 @@ import { useState } from "react";
 
 export const links = [
   {
-    link: "",
+    link: "/",
     text: "Home",
   },
   {
-    link: "",
+    link: "/about",
     text: "About",
   },
   {
@@ -38,9 +38,11 @@ export const Header = () => {
         <div>
           <ul className="md:flex hidden gap-10">
             {links.map((link) => (
+              <a href={link.link}>
               <li className="text-gray-600 cursor-pointer hover:text-primary transition-colors">
                 {link.text}
               </li>
+               </a>
             ))}
           </ul>
         </div>
