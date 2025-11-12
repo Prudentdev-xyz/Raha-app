@@ -7,14 +7,14 @@ import { AboutUs } from "./pages/AboutUs";
 
 function App() {
   return (
-      <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutUs />} />
-      </Routes>
-      <Footer />
-      </BrowserRouter>
+   <BrowserRouter>
+    <Header />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<AboutUs />} />
+    </Routes>
+    <Footer />
+   </BrowserRouter>
   );
 }
 
