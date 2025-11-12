@@ -1,8 +1,6 @@
 import React from "react";
 import AboutHeroPics from "/AboutHeroPics.svg";
 import { DonatenewButton } from "../buttons/DonatenewButton";
-import { MeritCard, Meritdatas } from "../MeritCard";
-import { Servicedatas } from "../ServiceCard";
 
 export const HeroAboutUs = () => {
   return (
