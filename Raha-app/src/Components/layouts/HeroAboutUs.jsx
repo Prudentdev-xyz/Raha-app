@@ -5,7 +5,7 @@ import { DonatenewButton } from "../buttons/DonatenewButton";
 export const HeroAboutUs = () => {
   return (
     <div>
-      <div className="flex flex-col md:flex-row gap-90 py-10 md:py-20 px-5 relative">
+      <div className="flex flex-col md:flex-row gap-90 py-5 md:py-20 px-5 relative">
         <img
           src={AboutHeroPics}
           alt="AboutHeroPics"
@@ -29,7 +29,7 @@ export const HeroAboutUs = () => {
             where empathy and cooperation thrive, making it a better place for
             future generations.
           </p>
-          <div className="pt-10 pb-10 md:pb-20 flex items-center justify-center md:justify-start">
+          <div className="pt-7 md:pt-10 pb-10 md:pb-20 flex items-center justify-center md:justify-start">
             <DonatenewButton>Donate Now</DonatenewButton>
           </div>
 

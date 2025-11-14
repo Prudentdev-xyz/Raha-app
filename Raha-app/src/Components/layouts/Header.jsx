@@ -62,12 +62,14 @@ export const Header = () => {
         <div className="md:hidden bg-tetiary border-t border-gray-200 shadow-lg h-screen sticky">
           <ul className="py-4 flex flex-col items-center justify-center static">
             {links.map((link) => (
+              <a href={link.link}>
               <li
                 className="text-gray-600 transition-colors py-3 px-3 hover:text-primary static cursor-pointer"
                 onClick={() => setOpen(false)}
               >
                 {link.text}
               </li>
+              </a>
             ))}
             <li className="px-4 py-3">
               <PrimaryButton>Donate Now</PrimaryButton>
