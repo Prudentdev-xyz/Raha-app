@@ -30,7 +30,7 @@ export const HeroAboutUs = () => {
             future generations.
           </p>
           <div className="pt-7 md:pt-10 pb-10 md:pb-20 flex items-center justify-center md:justify-start">
-            <DonatenewButton>Donate Now</DonatenewButton>
+            <a href="/Donate"><DonatenewButton>Donate Now</DonatenewButton></a>
           </div>
 
           <div className="flex gap-10 bg-secondary p-10 items-center text-center justify-center">

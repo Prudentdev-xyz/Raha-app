@@ -6,11 +6,11 @@ import FooterBottomFlower3 from "/FooterBottomFlower3.svg"
 
 export const FooterLinks = [
     {
-        link: "",
+        link: "/about",
         text: "About Us",
     },
     {
-        link:  "",
+        link:  "https://youtu.be/fEheBFAVtJU?si=stmN5D8NhN65QdRg",
         text: "Our Story",
     },
     {
@@ -18,7 +18,7 @@ export const FooterLinks = [
       text: "Fundraise",
     },
     {
-      link: "",
+      link: "/Donate",
       text: "Donate",
     },
     {
@@ -26,19 +26,19 @@ export const FooterLinks = [
       text: "Fundraise",
     },
     {
-      link: "",
+      link: "/Cpntact",
       text: "Contact Us",
     },
     {
-      link: "",
+      link: "/",
       text: "Instagram",
     },
     {
-      link: "",
+      link: "/",
       text: "Twitter",
     },
     {
-      link: "",
+      link: "/",
       text: "LinkedIn",
     }
 ]
@@ -56,15 +56,19 @@ export const Footer = () => {
           brighter tomorrows and empower individuals and families to thrive.
         </p>
         <div className="pt-2 flex gap-5 flex-col md:flex-row items-center">
-            <WatchnowButton>Donate Now</WatchnowButton>
-            <DonatenewButton>Contact us</DonatenewButton>
+            <a href="https://youtu.be/fEheBFAVtJU?si=stmN5D8NhN65QdRg"><WatchnowButton>Donate Now</WatchnowButton></a>
+            <a href="/Contact"><DonatenewButton>Contact us</DonatenewButton></a>
         </div>
         </div>
 
       <div className="w-full md:w-xl h-xl pt-5 md:pt-3 text-sm md:text-lg md:text-right flex md:block items-center justify-center">
         <ul className="text-tetiary gap-2 md:gap-3 grid grid-cols-2 md:grid-cols-3 ">
           {FooterLinks.map((link) => (
-           <li>{link.text}</li>
+            <a href={link.link}>
+           <li>
+            {link.text}
+           </li>
+           </a>
           ))}
         </ul>
       </div>

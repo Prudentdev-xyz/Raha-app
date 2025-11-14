@@ -72,7 +72,7 @@ export const Header = () => {
               </a>
             ))}
             <li className="px-4 py-3">
-              <PrimaryButton>Donate Now</PrimaryButton>
+              <a href="/Donate"><PrimaryButton>Donate Now</PrimaryButton></a>
             </li>
           </ul>
         </div>

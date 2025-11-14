@@ -81,14 +81,19 @@ export const ContactUs = () => {
           />
         </p>
         <p className="py-5">
-         <input
+          <input
             type="message"
             placeholder="Type your message here"
             className="rounded-xl bg-tetiary/10 h-40 md:h-40 w-70 md:w-90 px-4 placeholder:text-gray border-0"
-          />    
+          />
         </p>
+        <button className="bg-secondary px-30 md:px-40 py-2 rounded-full">Send</button>
       </div>
-      <img src="/ContactUsRight.svg" alt="ContactUsRight" className=" absolute right-0 top-0" />
+      <img
+        src="/ContactUsRight.svg"
+        alt="ContactUsRight"
+        className=" absolute right-0 top-0"
+      />
     </div>
   );
 };
