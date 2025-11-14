@@ -47,7 +47,7 @@ export const Header = () => {
           </ul>
         </div>
         <div className="md:flex hidden md:flex-row">
-          <PrimaryButton>Donate Now</PrimaryButton>
+          <a href="/Donate"><PrimaryButton>Donate Now</PrimaryButton></a>
         </div>
 
         <div
