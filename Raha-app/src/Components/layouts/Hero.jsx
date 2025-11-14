@@ -19,8 +19,8 @@ export const Hero = () => {
             compassionate world.
           </p>
           <div className="flex flex-col md:flex-row justify-center items-center gap-3">
-            <WatchnowButton>Watch Video</WatchnowButton>
-            <DonatenewButton>Donate Now</DonatenewButton>
+            <a href="https://youtu.be/fEheBFAVtJU?si=stmN5D8NhN65QdRg"><WatchnowButton>Watch Video</WatchnowButton></a>
+            <a href="/Donate"><DonatenewButton>Donate Now</DonatenewButton></a>
           </div>
         </div>
       </div>

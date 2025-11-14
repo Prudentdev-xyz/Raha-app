@@ -27,15 +27,6 @@ export const Testimonial = () => {
           />
         ))}
       </div>
-      <div className="md:flex hidden gap-2 absolute right-25 top-20">
-        <div className="h-10 w-10 bg-tetiary border border-primary rounded-full">
-          <img src={arrowLeft} className="pt-2 pl-2" />
-        </div>
-
-        <div className="h-10 w-10 bg-primary border border-tetiary rounded-full">
-          <img src={arrowRight} className="pt-2 pl-2" />
-        </div>
-      </div>
     </div>
   );
 };

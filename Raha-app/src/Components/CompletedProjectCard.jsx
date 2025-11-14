@@ -24,7 +24,7 @@ export const CompletedProjectdata = [
     header: "Charity Builds Schools to Uplift Communities",
     text: "This charity believes every child deserves a quality education. By constructing schools, they're paving the way for lasting community transformation.",
     SeeProject: "See Project",
-    className: "!bg-secondary !text-black"
+    className: "!bg-secondary !text-black",
   },
 ];
 
@@ -50,11 +50,12 @@ export const CompletedProjectCard = ({
       <p className="font-regular text-xs md:text-sm max-w-xl md:max-w-sm text-gray py-2 md:py-5">
         {text}
       </p>
-      <button
+      <a href="/"><button
         className={`bg-primary text-white px-4 py-2 md:px-8 md:py-4 text-lg md:text-xl font-medium rounded-full ${className}`}
       >
         {SeeProject}
       </button>
+      </a>
     </div>
   );
 };

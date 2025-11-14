@@ -21,7 +21,7 @@ export const NewsLetter = () => {
           id=""
           className="rounded-full bg-tetiary/10 h-11 md:h-15 w-70 md:w-120 px-4 placeholder:text-gray border-0"
         />
-        <WatchnowButton>Subscribe</WatchnowButton>
+        <a href="mailto:Raha-app@yahoo.com"><WatchnowButton>Subscribe</WatchnowButton></a>
       </div>
 
       <div>

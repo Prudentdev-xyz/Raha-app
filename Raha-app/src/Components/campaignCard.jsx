@@ -63,9 +63,9 @@ export const CampaignCard = ({
       </div>
       </div>
       <div className={`pt-1 md:pt-3 `}>
-          <button className={`bg-primary w-fit text-white px-6 md:px-8 py-2 md:py-4 text-lg md:text-xl font-medium rounded-full border-tetiary border-2 ${buttonclassName}`}>
+          <a href="/Donate"><button className={`bg-primary w-fit text-white px-6 md:px-8 py-2 md:py-4 text-lg md:text-xl font-medium rounded-full border-tetiary border-2 ${buttonclassName}`}>
       {donate}
-    </button>
+    </button></a>
       </div>
     </div>
   );

@@ -21,7 +21,7 @@ export const links = [
     text: "Fundraise",
   },
   {
-    link: "",
+    link: "/Contact",
     text: "Contact",
   },
 ];
