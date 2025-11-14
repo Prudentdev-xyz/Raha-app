@@ -13,7 +13,7 @@ export const links = [
     text: "About",
   },
   {
-    link: "",
+    link: "/Donate",
     text: "Donate",
   },
   {

@@ -22,6 +22,7 @@ export const Team = () => {
           Name={Teamcarddata.Name}
           Title={Teamcarddata.Title}
           Social={Teamcarddata.Social}
+          buttonClassName={Teamcarddata?.buttonClassName}
         />
         ))}
       </div>
